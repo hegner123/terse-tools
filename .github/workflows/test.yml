@@ -1,0 +1,66 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Run tests
+        run: go test -race -count=1 ./...
+
+      - name: Vet
+        run: go vet ./...
+
+  test-anthropic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Test Anthropic adapter
+        working-directory: provider/anthropic
+        run: go test -race -count=1 ./...
+
+  test-openai:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Test OpenAI adapter
+        working-directory: provider/openai
+        run: go test -race -count=1 ./...
+
+  test-gemini:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Test Gemini adapter
+        working-directory: provider/gemini
+        run: go test -race -count=1 ./...

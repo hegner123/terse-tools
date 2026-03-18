@@ -1,0 +1,27 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Vendor (uncomment if not vendoring)
+# vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX
+.fseventsd
