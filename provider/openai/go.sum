@@ -1,3 +1,5 @@
+github.com/hegner123/terse-tools v0.1.0 h1:3xAKASpICKwo9IDr/aqBT5xneStjXnyBGCPktHnomzw=
+github.com/hegner123/terse-tools v0.1.0/go.mod h1:8X4Pvl+2c3LfoZKswUxlNsdmPlqk8/8fa4GkhBJHN70=
 github.com/openai/openai-go v1.12.0 h1:NBQCnXzqOTv5wsgNC36PrFEiskGfO5wccfCWDo9S1U0=
 github.com/openai/openai-go v1.12.0/go.mod h1:g461MYGXEXBVdV5SaR/5tNzNbSfwTBBefwc+LlDCK0Y=
 github.com/tidwall/gjson v1.14.2/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=

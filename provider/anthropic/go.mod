@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/anthropics/anthropic-sdk-go v1.27.0
-	github.com/hegner123/terse-tools v0.0.0
+	github.com/hegner123/terse-tools v0.1.0
 )
 
 require (
@@ -14,5 +14,3 @@ require (
 	github.com/tidwall/sjson v1.2.5 // indirect
 	golang.org/x/sync v0.16.0 // indirect
 )
-
-replace github.com/hegner123/terse-tools => ../..

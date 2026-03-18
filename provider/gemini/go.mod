@@ -4,7 +4,7 @@ go 1.26.1
 
 require (
 	github.com/google/generative-ai-go v0.20.1
-	github.com/hegner123/terse-tools v0.0.0
+	github.com/hegner123/terse-tools v0.1.0
 )
 
 require (
@@ -42,5 +42,3 @@ require (
 	google.golang.org/grpc v1.64.1 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 )
-
-replace github.com/hegner123/terse-tools => ../..
